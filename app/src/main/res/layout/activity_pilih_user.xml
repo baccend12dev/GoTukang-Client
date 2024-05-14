@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/loginBkColor"
+    android:clipToPadding="false"
+    android:padding="16dp"
+    android:visibility="visible"
+    tools:context=".ui.main.PilihUserActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_user1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_user1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_user1round" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_pelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout_user1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4sp"
+                android:textStyle="bold"
+                android:text="Pengguna"
+                android:textAppearance="@style/intro_title"
+                android:textSize="20sp"
+                android:translationY="1.78sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:textColor="@color/not_black"
+                android:textStyle="italic"
+                android:text="Pilih ini jika ingin mencari tukang dan melakukan pemesanan" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_user2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_pelanggan">
+
+        <ImageView
+            android:id="@+id/img_user2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_user_tukang" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_tukang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layout_user2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4sp"
+                android:textStyle="bold"
+                android:text="Tukang"
+                android:textAppearance="@style/intro_title"
+                android:textSize="20sp"
+                android:translationY="1.78sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:textStyle="italic"
+                android:text="Pilih ini jika ingin mendaftar sebagai tukang bangunan"
+                android:textColor="@color/not_black" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/layout_user1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/img_user1round"-->
+    <!--        android:clickable="true"-->
+    <!--        android:foreground="?android:attr/selectableItemBackground"-->
+    <!--        app:cardCornerRadius="20dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <ImageView-->
+    <!--                android:id="@+id/img_user1"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="250dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@drawable/img_user1round" />-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center_horizontal"-->
+    <!--                android:layout_marginTop="210dp"-->
+    <!--                android:background="@drawable/background_card"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:layout_marginLeft="4dp"-->
+    <!--                android:layout_marginRight="4dp"-->
+    <!--                android:paddingLeft="16dp"-->
+    <!--                android:paddingTop="8dp"-->
+    <!--                android:paddingRight="16dp"-->
+    <!--                android:paddingBottom="8dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:fontFamily="@font/gilroy_bold"-->
+    <!--                    android:lineSpacingExtra="4sp"-->
+    <!--                    android:text="Pengguna"-->
+    <!--                    android:textAppearance="@style/intro_title"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    android:translationY="1.78sp" />-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginTop="4dp"-->
+    <!--                    android:fontFamily="@font/gilroy_medium"-->
+    <!--                    android:textAppearance="@style/tv_see_all"-->
+    <!--                    android:text="Pilih ini jika ingin mencari dan melakukan jahitan" />-->
+    <!--            </LinearLayout>-->
+    <!--        </RelativeLayout>-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/layout_user2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:clickable="true"-->
+    <!--        android:foreground="?android:attr/selectableItemBackground"-->
+    <!--        app:cardCornerRadius="20dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/layout_user1">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/img_user2"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="250dp"-->
+    <!--                android:scaleType="centerCrop"-->
+    <!--                android:src="@drawable/img_user2round" />-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center_horizontal"-->
+    <!--                android:layout_marginTop="210dp"-->
+    <!--                android:background="@drawable/background_card"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:layout_marginLeft="4dp"-->
+    <!--                android:layout_marginRight="4dp"-->
+    <!--                android:paddingLeft="16dp"-->
+    <!--                android:paddingTop="8dp"-->
+    <!--                android:paddingRight="16dp"-->
+    <!--                android:paddingBottom="8dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:fontFamily="@font/gilroy_bold"-->
+    <!--                    android:lineSpacingExtra="4sp"-->
+    <!--                    android:text="Tukang"-->
+    <!--                    android:textAppearance="@style/intro_title"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    android:translationY="1.78sp" />-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginTop="4dp"-->
+    <!--                    android:fontFamily="@font/gilroy_medium"-->
+    <!--                    android:textAppearance="@style/tv_see_all"-->
+    <!--                    android:text="Pilih ini jika ingin daftar sebagai tukang" />-->
+    <!--            </LinearLayout>-->
+    <!--        </RelativeLayout>-->
+    <!--    </androidx.cardview.widget.CardView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

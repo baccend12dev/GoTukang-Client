@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tukang.kategori.EditDataKategoriFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:gravity="center_horizontal"
+            android:text="Edit Data Kategori"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_nama_tukang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="center_horizontal"
+            android:text="Nama Tukang"
+            android:textSize="20sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_ket_kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:boxStrokeColor="@color/primaryTextColor"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/primaryTextColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ket_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_background"
+                android:fontFamily="@font/gilroy_medium"
+                android:hint="Keterangan"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_bahan_tukang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/primaryTextColor"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/primaryTextColor">
+
+            <EditText
+                android:id="@+id/et_bahan_tukang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_background"
+                android:fontFamily="@font/gilroy_medium"
+                android:hint="Bahan Jahit"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_harga_bahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/primaryTextColor"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/primaryTextColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_harga_bahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_background"
+                android:fontFamily="@font/gilroy_medium"
+                android:hint="Harga Bahan (Rp)"
+                android:inputType="number"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_ongkos_tukang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/primaryTextColor"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/primaryTextColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_ongkos_tukang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_background"
+                android:fontFamily="@font/gilroy_medium"
+                android:hint="Ongkos Jahit (Rp)"
+                android:inputType="number"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_lama_waktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/primaryTextColor"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/primaryTextColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_lama_waktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_background"
+                android:fontFamily="@font/gilroy_medium"
+                android:hint="Perkiraan lama waktu tukang (Hari)"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_button_bk"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="Cancel"
+                android:textAppearance="@style/button_login_register"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_simpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_button_bk"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="Simpan"
+                android:textAppearance="@style/button_login_register"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".ui.pelanggan.transaksi.DetailTransaksiPelangganFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_detail_pesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Detail Pesanan"
+                android:fontFamily="@font/gilroy_medium"
+                android:lineSpacingExtra="4sp"
+                android:textAppearance="@style/intro_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/background_card"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_id_pesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode pesanan" />
+
+            <TextView
+                android:id="@+id/tv_id_tukang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Id Tukang" />
+
+            <TextView
+                android:id="@+id/tv_id_pelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Id Pelanggan" />
+
+            <TextView
+                android:id="@+id/tv_id_detail_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Id Detail Kategori" />
+
+            <TextView
+                android:id="@+id/tv_nama_tukang3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Nama Tukang" />
+
+            <TextView
+                android:id="@+id/tv_telp_tukang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Telp Tukang" />
+
+            <TextView
+                android:id="@+id/tv_alamat_tukang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Alamat Tukang" />
+
+            <TextView
+                android:id="@+id/tv_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Kategori" />
+
+            <TextView
+                android:id="@+id/tv_tanggal_pesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Tanggal Pesanan" />
+
+            <TextView
+                android:id="@+id/tv_tanggal_pesanan_selesai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Tanggal Pesanan Selesai" />
+
+            <TextView
+                android:id="@+id/tv_catatan_pesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Catatan Pesanan" />
+
+            <TextView
+                android:id="@+id/tv_asal_bahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Asal Bahan" />
+
+            <TextView
+                android:id="@+id/tv_status_bahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Status Bahan" />
+
+            <TextView
+                android:id="@+id/tv_harga_bahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Harga Bahan" />
+
+            <TextView
+                android:id="@+id/tv_ongkos_tukang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Ongkos Tukang" />
+
+            <TextView
+                android:id="@+id/tv_jumlah_tukang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Jumlah Jahitan" />
+
+            <TextView
+                android:id="@+id/tv_total_biaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Total Biaya" />
+
+            <TextView
+                android:id="@+id/tv_ket_pesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Keterangan Pesanan"/>
+
+            <TextView
+                android:id="@+id/tv_status_pesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Status Pesanan" />
+
+        </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_input_ukuran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/login_button_bk"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="Masukkan Ukuran"
+                android:textAppearance="@style/button_login_register"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rating_tukang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/login_button_bk"
+                android:fontFamily="@font/gilroy_medium"
+                android:text="Rating Tukang"
+                android:textAppearance="@style/button_login_register"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_list_ukuran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/gilroy_medium"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="List Ukuran" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_ukuran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clipToPadding="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detail_kategori"
+                tools:listitem="@layout/item_list_ukuran_pesanan_tukang"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

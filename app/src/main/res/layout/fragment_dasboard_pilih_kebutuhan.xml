@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Pilih Kebutuhan Anda"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Pilihan Pertama -->
+    <RelativeLayout
+        android:id="@+id/option1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivOption1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="18dp"
+            android:src="@drawable/img_user_tukang"
+            android:scaleType="fitXY"
+            android:contentDescription="Option 1 Image"/>
+
+        <TextView
+            android:id="@+id/tvOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Build"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="38sp" />
+
+        <TextView
+            android:id="@+id/taglineOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Segala kebutuhan anda dapat terpenuhi dengan satu klik"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/tvOption1"
+            android:background="@color/chuck_colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+
+    <!-- Pilihan Kedua -->
+    <RelativeLayout
+        android:id="@+id/option2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivOption2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img_user_tukang"
+            android:scaleType="fitXY"
+            android:contentDescription="Option 2 Image"/>
+
+        <TextView
+            android:id="@+id/tvOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="Renovasi"
+            android:textColor="@android:color/black"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/taglineOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOption2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@color/chuck_colorPrimaryDark"
+            android:text="Segala kebutuhan anda dapat terpenuhi dengan satu klik"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+    </RelativeLayout>
+</LinearLayout>

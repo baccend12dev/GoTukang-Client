@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.main.HomeTukangActivity">
+
+    <!--Top Nav-->
+    <LinearLayout
+        android:id="@+id/top_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="8dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="Hi,"
+            android:textColor="#1C213F"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/gilroy_medium"
+            tools:text="karyadi"
+            android:textColor="#1C213F"
+            android:textSize="18sp" />
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/btn_search"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="@null"-->
+        <!--            android:src="@drawable/ic_search" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_tukang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:elevation="2dp"
+            android:transitionName="userIconTransition"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            android:src="@drawable/img_user" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/top_header"
+        android:layout_above="@id/bottom_navigation">
+    </FrameLayout>
+
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:mbn_countBackgroundColor="#ff6f00"
+        app:mbn_countTextColor="@color/black"
+        app:mbn_defaultIconColor="#90a4ae"
+        app:mbn_rippleColor="#2f424242"
+        app:mbn_selectedIconColor="@color/purple_200"
+        app:mbn_shadowColor="#1f212121" />
+
+<!--    app:mbn_selectedIconColor="#67478F"-->
+</RelativeLayout>

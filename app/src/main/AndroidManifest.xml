@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.karyadi.skripsi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/application_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Skripsi">
+        <activity
+            android:name="com.karyadi.skripsi.ui.pelanggan.detail.MapsRoutePelangganActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.pelanggan.auth.MapsPelangganActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.pelanggan.pesanan.PesananActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.tukang.ukuran.UkuranDetailKategoriActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.pelanggan.auth.EditDataPelangganActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.pelanggan.detail.DetailTukangPelangganActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.tukang.auth.EditDataTukangActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.tukang.dashboard.DetailTukangActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.pelanggan.auth.RegisterPelangganActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.pelanggan.auth.LoginPelangganActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.tukang.auth.RegisterTukangActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.tukang.auth.LoginTukangActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.landingpage.IntroActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.main.HomePelangganActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.main.HomeTukangActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.main.PilihUserActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.karyadi.skripsi.ui.pelanggan.rating.RatingTukangActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".ui.splashscreen.SplashScreenActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:theme="@style/Theme.Intro"/> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.karyadi.skripsi.ui.splashscreen.SplashScreenActivity"
+            android:theme="@style/Theme.Intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
