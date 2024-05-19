@@ -1,6 +1,5 @@
 ## GoTukang Client - Aplikasi Pencari Tukang
 
-![Headline](docs/images/headline_client.png?raw=true)
 
 ## About This Project
 Aplikasi Pencari Tukang Berbasis Android Menggunakan Teknologi Location Based Services dan Metode SMART. Teknologi Location Based Services (LBS) digunakan untuk penentuan lokasi, sedangkan metode SMART digunakan untuk perangkingan Tukang.
@@ -91,56 +90,10 @@ Min API level is set to 21, so the presented approach is suitable for over 94% o
 
 ## REST API Documentation
 
-## Screenshot Application
 
-| Splash Screen | Landing Page (1) | Landing Page (2) | Landing Page (3) |
-|:-------------:|:----------------:|:----------------:|:----------------:|
-|<img width="200px" height="380px" src="docs/images/ss_splash_screen.jpg"> | <img width="200px" height="380px" src="docs/images/ss_landing_page_1.jpg"> | <img width="200px" height="380px" src="docs/images/ss_landing_page_2.jpg"> | <img width="200px" height="380px" src="docs/images/ss_landing_page_3.jpg"> |
 
-| Memilih User | Login Pengguna | Register Pengguna |                               Login Tukang                               |                               Register Tukang                               |
-|:------------:|:--------------:|:-----------------:|:------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
-|<img width="140px" height="300px" src="docs/images/ss_memilih_user.png"> | <img width="140px" height="300px" src="docs/images/ss_login_pengguna.png"> | <img width="140px" height="300px" src="docs/images/ss_register_pengguna.png"> | <img width="140px" height="300px" src="docs/images/ss_login_Tukang.png"> | <img width="140px" height="300px" src="docs/images/ss_register_Tukang.png"> |
 
-## Thank you Note
 
-Alhamdulillah wa syukurillah. Puji Syukur kepada [Allah Subhaanahu wa ta’aalaa]() yang telah memberikan
-rahmat, hidayah, dan pertolongan-Nya. Karena hanya dengan ridho-Nya
-saya mampu berfikir dan menyelesaikan skripsi ini.
-Banyak dukungan dan bantuan yang didapatkan selama penelitian hingga
-akhirnya mampu menyelesaikan skripsi dan studi ini. Dengan rasa hormat,
-ucapan terima kasih kepada seluruh pihak terkait yang turut membantu dan
-terlibat dalam menyelesaikan skripsi ini, jazakumullahu khairan katsiran.
-Saya menyadari masih banyak kekurangan mengingat keterbatasan
-pengetahuan dan kemampuan. Oleh karena itu saya menerima segala
-kritik dan saran dari semua pihak dalam penyempurnaan skripsi ini.
-
-Dengan izin dan ridho [Allah Subhaanahu wa ta’aalaa]() penelitian dan
-studi ini berhasil terselesaikan. Selain itu, dengan segala hormat, ucapan terima
-kasih yang sebesar–besarnya saya ucapkan kepada seluruh pihak terkait yang telah
-membantu atas selesainya skripsi ini. Tanpa bantuan dan dukungan mereka,
-skripsi ini tidak akan terselesaikan dengan baik. Ucapan terima kasih penulis
-ucapkan kepada:
-
-- Keluarga, terutama orang tua, kakak, dan adik-adik yang telah memberikan bantuan, doa, dukungan, hiburan, kasih, dan sayang selama ini.
-- Ibu Retno dan Bapak Hendra sebagai Dosen Pembimbing.
-- Seluruh Bapak dan Ibu Dosen Program Studi Informatika UPN “Veteran” Jawa Timur yang telah mendidik dan memberikan ilmunya.
-- Teman seperjuangan yang ada dimanapun yang selalu mendoakan, mengingatkan, menghibur, dan menyemangati dalam pengerjaan skripsi ini.
-- Tim Work yang telah menjadi rekan, dan sering memberikan bantuan dan kerjasamanya selama kuliah.
-- Teman-teman Informatika angkatan 2017 dan kakak maupun adik tingkat serta pihak-pihak lain yang terkait yang tidak disebutkan atas segala bentuk kepeduliannya.
-
-## Special thanks to
-
-## Colaborator
-
-Very open to anyone, I'll write your name under this, please contribute by sending an email to me
-
-- Mail to karyadisimamora1@gmail.com
-- Subject : Github _ [Github-Username-Account] _ [Language] _ [Repository-Name]
-
-Name of Contributor
-- Waiting List
-
-Waiting for your contribution
 
 ## Copyright
 
